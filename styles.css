@@ -1,11 +1,26 @@
 body {
   margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
 }
 
-p {
+p,
+h1 {
   text-align: center;
 }
 
 .time {
   font-size: 30pt;
+}
+
+.ender {
+  font-size: 20pt;
+}
+
+.timehold p {
+  margin: 0;
+  padding: 0;
 }
