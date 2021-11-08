@@ -26,26 +26,19 @@ h1 {
 }
 
 body {
-  animation: 10000ms ease-in-out infinite color-change;
+  background: linear-gradient(-45deg, #444d49, #66736d, #b1bab6, #8b9892);
+  background-size: 400% 400%;
+  animation: infiniwaves 15s ease infinite;
 }
 
-@keyframes color-change {
+@keyframes infiniwaves {
   0% {
-    background-color: teal;
+    background-position: 0% 50%;
   }
-  20% {
-    background-color: gold;
-  }
-  40% {
-    background-color: indianred;
-  }
-  60% {
-    background-color: violet;
-  }
-  80% {
-    background-color: green;
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    background-color: teal;
+    background-position: 0% 50%;
   }
 }
